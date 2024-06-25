@@ -12,6 +12,10 @@ public class CountDownApp {
         ignition = new LaunchEvent(6, "Start engines!");
         liftoff = new LaunchEvent(0, "Liftoff!");
 
-        
+        clock.start();
+
+        new Thread(flood).start();
+        new Thread(ignition).start();
+        new Thread(liftoff).start();
     }
 }

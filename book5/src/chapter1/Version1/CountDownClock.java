@@ -1,5 +1,5 @@
 /* LISTING 1-1 */
-package chapter1.Version1;
+package chapter1.version1;
 
 public class CountDownClock extends Thread {
     public void run() { //This method is called by Java when the clock thread has been started. All processing done by the thread must be either in the run method or in some other method called by the run method.

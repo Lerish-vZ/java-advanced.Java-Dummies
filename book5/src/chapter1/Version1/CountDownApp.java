@@ -1,4 +1,4 @@
-package chapter1.Version1;
+package chapter1.version1;
 
 public class CountDownApp {
     public static void main(String[] args) {

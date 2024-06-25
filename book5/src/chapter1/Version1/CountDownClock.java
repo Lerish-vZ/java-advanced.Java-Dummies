@@ -1,2 +1,4 @@
-package chapter1.Version1;public class CountDownClock {
+package chapter1.Version1;
+
+public class CountDownClock {
 }

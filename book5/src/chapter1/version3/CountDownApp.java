@@ -38,7 +38,8 @@ public class CountDownApp {
                 System.out.println("T minus " + t);
                 try {
                     Thread.sleep(1000);
-                } catch (Exception e) {}
+                } catch (Exception e) {
+                }
             }
         }
 
@@ -53,8 +54,26 @@ public class CountDownApp {
 
         TimeMonitor tm;
 
-        public LaunchEvent(int start, String message, TimeMonitor monitor){
-            
+        public LaunchEvent(int start, String message, TimeMonitor monitor) {
+            this.start = start;
+            this.message = message;
+            this.tm = monitor;
+        }
+
+        public void run() {
+            boolean eventDone = false;
+
+            while (!eventDone) {
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                }
+
+                if (tm.getTime() <= start) {
+                    System.out.println(this.message);
+                    eventDone = true;
+                }
+            }
         }
     }
 }

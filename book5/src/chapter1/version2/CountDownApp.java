@@ -26,7 +26,7 @@ public class CountDownApp {
         events.add(new LaunchEvent(0, "Liftoff!"));
         clock.start();
         for (Runnable e : events)
-        new Thread(e).start(); 
+        new Thread(e).start();
         */
 
     }

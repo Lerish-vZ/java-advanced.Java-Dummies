@@ -29,17 +29,32 @@ public class CountDownApp {
     class CountDownClock extends Thread implements TimeMonitor {
         private int t;
 
-        public CountDownClock(int start){
+        public CountDownClock(int start) {
             this.t = start;
         }
 
         public void run() {
-            for (; t >= 0; t--){
+            for (; t >= 0; t--) {
                 System.out.println("T minus " + t);
+                try {
+                    Thread.sleep(1000);
+                } catch (Exception e) {}
             }
-            try {
-                Thread.sleep(1000);
-            } catch (Exception e) {}
+        }
+
+        public int getTime() {
+            return t;
+        }
+    }
+
+    class LaunchEvent implements Runnable {
+        private int start;
+        private String message;
+
+        TimeMonitor tm;
+
+        public LaunchEvent(int start, String message, TimeMonitor monitor){
+            
         }
     }
 }

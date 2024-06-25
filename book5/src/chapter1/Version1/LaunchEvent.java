@@ -1,2 +1,4 @@
-package chapter1.Version1;public class LaunchEvent {
+package chapter1.Version1;
+
+public class LaunchEvent {
 }

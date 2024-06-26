@@ -1,8 +1,8 @@
 /* LISTING 1-4 */
 package chapter1.version3;
 
-import chapter1.version1.CountDownClock;
-import chapter1.version1.LaunchEvent;
+import chapter1.version3.CountDownClock;
+import chapter1.version3.LaunchEvent;
 
 import java.util.ArrayList;
 

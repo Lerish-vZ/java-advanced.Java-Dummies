@@ -15,12 +15,13 @@ class CountDownApp {
 
         for (int t = 20; t > 0; t--) {
             pool.schedule(new CountDownClock(t), (long)(20-t), TimeUnit.SECONDS);
-            pool.schedule(flood, 3L, TimeUnit.SECONDS);
-            pool.schedule(ignition, 13L, TimeUnit.SECONDS);
-            pool.schedule(liftoff, 19L, TimeUnit.SECONDS);
-
-            pool.shutdown();
         }
+
+        pool.schedule(flood, 3L, TimeUnit.SECONDS);
+        pool.schedule(ignition, 13L, TimeUnit.SECONDS);
+        pool.schedule(liftoff, 19L, TimeUnit.SECONDS);
+
+        pool.shutdown();
 
     }
 }

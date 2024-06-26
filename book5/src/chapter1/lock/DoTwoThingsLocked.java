@@ -5,4 +5,6 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 public class DoTwoThingsLocked {
     ScheduledThreadPoolExecutor pool = new ScheduledThreadPoolExecutor(2);
+
+    CountDownClockLocked clock = new CountDo
 }

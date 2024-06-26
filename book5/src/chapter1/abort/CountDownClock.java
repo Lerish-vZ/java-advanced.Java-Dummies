@@ -10,7 +10,7 @@ public class CountDownClock extends Thread implements TimeMonitor {
     public void run() {
         boolean aborted = false;
 
-        for (; t >= 0; t++) {
+        for (; t >= 0; t--) {
             System.out.println("T minus " + t);
 
             try{

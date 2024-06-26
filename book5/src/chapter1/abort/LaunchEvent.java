@@ -24,7 +24,7 @@ public class LaunchEvent implements Runnable {
             if(tm.getTime() <= start) {
                 System.out.println(this.message);
                 eventDone = true;
-                System.out.println("ABORT!!");
+                System.out.println("ABORT!");
                 tm.abortCountDown();
             }
             if (Thread.interrupted())

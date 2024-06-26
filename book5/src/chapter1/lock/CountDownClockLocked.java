@@ -19,3 +19,10 @@ public class CountDownClockLocked extends Thread {
         lock.unlock();
     }
 }
+
+/*
+The lock object declared at the top is an instance of the ReentrantLock class and makes that only one thread can have the lock object at a time.
+The lock.lock() gives access to one thread and doesn't allow any other thread access to the locked object.
+The object only becomes available to another thread when the access thread reaches lock.unlock().
+After the first thread calls lock.unlock(), the second thread proceeds into the method's for loop.
+*/

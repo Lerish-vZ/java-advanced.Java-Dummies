@@ -19,9 +19,4 @@ public class CountDownApp {
             new Thread(e).start();
         }
     }
-
-    interface TimeMonitor {
-        int getTime();
-        void abortCountDown();
-    }
 }

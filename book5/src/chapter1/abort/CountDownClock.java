@@ -1,6 +1,6 @@
 package chapter1.abort;
 
-public class CountDownClock extends Thread implements CountDownApp.TimeMonitor {
+public class CountDownClock extends Thread implements TimeMonitor {
     private int t;
 
     public CountDownClock(int t) {
@@ -31,5 +31,13 @@ public class CountDownClock extends Thread implements CountDownApp.TimeMonitor {
 
     public int getTime() {
         return t;
+    }
+
+    public synchronized void abortCountDown() {
+        Thread[] threads = new Thread[Thread.activeCount()];
+        Thread.enumerate(threads);
+        for (Thread t : threads) {
+            t.interrupt();
+        }
     }
 }

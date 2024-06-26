@@ -1,4 +1,6 @@
 package chapter1.abort;
 
-public class TimeMonitor {
+interface TimeMonitor {
+    int getTime();
+    void abortCountDown();
 }

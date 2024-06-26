@@ -1,5 +1,5 @@
 /* LISTING 1-8 */
-package chapter1.lock;
+package chapter1;
 
 import chapter1.version3.CountDownClock;
 

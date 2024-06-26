@@ -1,2 +1,4 @@
-package chapter1.sync;public class CountDownClockSync {
+package chapter1.sync;
+
+public class CountDownClockSync {
 }

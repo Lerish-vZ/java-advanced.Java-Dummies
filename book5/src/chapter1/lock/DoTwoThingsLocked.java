@@ -1,2 +1,4 @@
-package chapter1.lock;public class DoTwoThingsLocked {
+package chapter1.lock;
+
+public class DoTwoThingsLocked {
 }

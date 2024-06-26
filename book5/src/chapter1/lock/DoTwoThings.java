@@ -1,7 +1,7 @@
 /* LISTING 1-8 */
 package chapter1.lock;
 
-import chapter1.newThreading.CountDownClock;
+import chapter1.version3.CountDownClock;
 
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 
@@ -16,6 +16,7 @@ public class DoTwoThings {
     DoTwoThings() {
         pool.execute(clock);
         pool.execute(clock);
+
         pool.shutdown();
     }
 }

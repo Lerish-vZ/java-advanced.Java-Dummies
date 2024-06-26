@@ -28,7 +28,7 @@ public class CountDownClock extends Thread implements CountDownApp.TimeMonitor {
             }
         }
     }
-    
+
     public int getTime() {
         return t;
     }

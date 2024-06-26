@@ -13,7 +13,7 @@ class CountDownApp {
         ignition = new LaunchEvent("Start engines!");
         liftoff = new LaunchEvent("Liftoff!");
 
-        for (int t = 20; t > 0; t--) {
+        for (int t = 20; t >= 0; t--) {
             pool.schedule(new CountDownClock(t), (long)(20-t), TimeUnit.SECONDS);
         }
 

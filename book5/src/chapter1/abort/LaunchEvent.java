@@ -1,2 +1,4 @@
-package chapter1.abort;public class LaunchEvent {
+package chapter1.abort;
+
+public class LaunchEvent {
 }

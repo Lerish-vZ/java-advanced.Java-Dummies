@@ -1,2 +1,4 @@
-package chapter1.abort;public class CountDownClock {
+package chapter1.abort;
+
+public class CountDownClock {
 }

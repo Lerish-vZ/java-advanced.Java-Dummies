@@ -2,6 +2,7 @@ package chapter2.regexTest;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public final class Reg {
     static String r, s; //static means that the variable belongs to the class itself rather than a specific instance of the class.
@@ -19,8 +20,17 @@ public final class Reg {
                 r = sc.nextLine();
                 validRegex = true;
 
-                
-            }
+                try {
+                    pattern = Pattern.compile(r);
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                    validRegex = false;
+                }
+            } while (!validRegex);
+
+            doneMatching = false;
+
+
         }
     }
 

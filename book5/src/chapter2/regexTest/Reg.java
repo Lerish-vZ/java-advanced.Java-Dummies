@@ -10,6 +10,18 @@ public final class Reg {
     static boolean match, validRegex, doneMatching;
     private static Scanner sc = new Scanner(System.in);
 
-    
+    public static void main(String[] args) {
+        System.out.println("Welcome to the Regex Tester\n");
+
+        do {
+            do {
+                System.out.print("\nEnter regex: ");
+                r = sc.nextLine();
+                validRegex = true;
+
+                
+            }
+        }
+    }
 
 }

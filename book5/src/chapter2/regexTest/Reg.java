@@ -59,3 +59,4 @@ public final class Reg {
     }
 
 }
+//f[aio]r - Should match any three-letter word that begins with f; ends with r; and has a, i, or o in the middle

@@ -52,7 +52,7 @@ public final class Reg {
         System.out.print("Another? (Y or N) ");
         String reply = sc.nextLine();
 
-        if(reply.equalsIgnoreCase("Y")) {
+        if (reply.equalsIgnoreCase("Y")) {
             return true;
         }
         return false;

@@ -30,8 +30,32 @@ public final class Reg {
 
             doneMatching = false;
 
+            while (!doneMatching) {
+                System.out.print("Enter string: ");
+                s = sc.nextLine();
 
+                if (s.length() == 0) {
+                    doneMatching = true;
+                } else {
+                    matcher = pattern.matcher(s);
+                    if (matcher.matches()) {
+                        System.out.println("Match.");
+                    } else {
+                        System.out.println("Does not match.");
+                    }
+                }
+            }
+        } while (askAgain());
+    }
+
+    private static boolean askAgain() {
+        System.out.print("Another? (Y or N) ");
+        String reply = sc.nextLine();
+
+        if(reply.equalsIgnoreCase("Y")) {
+            return true;
         }
+        return false;
     }
 
 }

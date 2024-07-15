@@ -32,7 +32,7 @@ public class QuickSortApp {
 
     public static int[] sort(int[] array) {
         a = array;
-        sort(0, a.length -1);
+        sort(0, a.length - 1);
         return a;
     }
 
@@ -55,7 +55,7 @@ public class QuickSortApp {
             for(j--; a[j] > pivot; j--);
 
             if(i < j)
-                swap(i, j)
+                swap(i, j);
         }
         return j;
     }

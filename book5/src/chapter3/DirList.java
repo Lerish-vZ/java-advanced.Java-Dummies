@@ -37,7 +37,7 @@ public class DirList {
     }
 
     private static boolean askAgain() {
-        System.out.print("Another? (Y or N)");
+        System.out.print("Another? (Y or N) ");
         String reply = sc.nextLine();
 
         if(reply.equalsIgnoreCase("Y"))

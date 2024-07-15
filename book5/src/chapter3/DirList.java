@@ -1,2 +1,4 @@
-package chapter3;public class DirList {
+package chapter3;
+
+public class DirList {
 }

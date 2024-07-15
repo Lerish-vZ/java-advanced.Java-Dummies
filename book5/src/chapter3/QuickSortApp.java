@@ -28,5 +28,20 @@ public class QuickSortApp {
         }
     }
 
-    
+    private static int[] a;
+
+    public static int[] sort(int[] array) {
+        a = array;
+        sort(0, a.length -1);
+        return a;
+    }
+
+    public static void sort(int low, int high) {
+        if (low <= high)
+            return;
+
+        int p = partition(low,high);
+        sort(low,p);
+        sort(p+1,high);
+    }
 }

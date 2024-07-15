@@ -25,6 +25,18 @@ public class DirList {
     }
 
     private static void listDirectories(File dir, String indent) {
+        File[] dirs = dir.listFiles();
 
+        for(File f : dirs) {
+            if(f.isDirectory()) {
+                System.out.println(indent + f.getName());
+                listDirectories(f, indent + "  ");
+            }
+        }
+
+    }
+
+    private static boolean askAgain() {
+        System.out.print("Another? (Y or N)");
     }
 }

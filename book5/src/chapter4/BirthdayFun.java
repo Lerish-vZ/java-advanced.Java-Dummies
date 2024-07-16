@@ -41,8 +41,14 @@ public class BirthdayFun {
                 long years = birthDate.until(LocalDate.now(), ChronoUnit.YEARS);
                 System.out.println("You are " + years + " years young.");
 
-                
+                LocalDate nextBDay = birthDate.plusYears(years + 1);
+                System.out.println("Your next birthday is " + nextBDay.format(fullFormat) + ".");
 
+                long wait = LocalDate.now().until(nextBDay, ChronoUnit.DAYS);
+                System.out.println("That's just " + wait + " days from now!");
+
+                LocalDate halfBirthday = birthDate.plusMonths(6);
+                System.out.println("Your half-birthday is " + halfBirthday.format(monthDayFormat) + ".");
             }
         }
     }

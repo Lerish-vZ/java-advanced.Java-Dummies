@@ -21,7 +21,7 @@ public class BirthdayFun {
 
             System.out.println();
 
-            System.out.print("Please enter your birthdate (yyyy-mmm-dd): ");
+            System.out.print("Please enter your birthdate (yyyy-mm-dd): ");
             String input = sc.nextLine();
 
             try {
@@ -53,7 +53,7 @@ public class BirthdayFun {
             } catch (DateTimeParseException ex) {
                 System.out.println("Sorry, that is not a valid date.");
             }
-        } while(AskAgain());
+        } while(askAgain());
     }
 
     private static boolean askAgain() {

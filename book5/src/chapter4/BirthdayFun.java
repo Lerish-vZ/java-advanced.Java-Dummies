@@ -51,8 +51,19 @@ public class BirthdayFun {
                 LocalDate halfBirthday = birthDate.plusMonths(6);
                 System.out.println("Your half-birthday is " + halfBirthday.format(monthDayFormat) + ".");
             } catch (DateTimeParseException ex) {
-                
+                System.out.println("Sorry, that is not a valid date.");
             }
+        } while(AskAgain());
+    }
+
+    private static boolean askAgain() {
+        System.out.println();
+        System.out.print("Another? (Y or N) ");
+        String reply = sc.nextLine();
+
+        if(reply.equalsIgnoreCase("Y")){
+            return true;
         }
+        return false;
     }
 }

@@ -3,6 +3,7 @@ package chapter4;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
@@ -16,7 +17,7 @@ public class BirthdayFun {
             DateTimeFormatter fullFormat = DateTimeFormatter.ofPattern("MMMM d, YYYY");
             DateTimeFormatter monthDayFormat = DateTimeFormatter.ofPattern("MMMM d");
 
-            System.out.println("Today is " + LocalDate.now().format(fullFormat) + ".") ;
+            System.out.println("Today is " + LocalDate.now().format(fullFormat) + ".");
 
             System.out.println();
 
@@ -26,7 +27,7 @@ public class BirthdayFun {
             try {
                 birthDate = LocalDate.parse(input);
 
-                if(birthDate.isAfter(LocalDate.now())) {
+                if (birthDate.isAfter(LocalDate.now())) {
                     System.out.println("You haven't been born yet!");
                     continue;
                 }
@@ -49,6 +50,8 @@ public class BirthdayFun {
 
                 LocalDate halfBirthday = birthDate.plusMonths(6);
                 System.out.println("Your half-birthday is " + halfBirthday.format(monthDayFormat) + ".");
+            } catch (DateTimeParseException ex) {
+                
             }
         }
     }

@@ -8,7 +8,6 @@ module org.example.book6 {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
     opens org.example.book6 to javafx.fxml;

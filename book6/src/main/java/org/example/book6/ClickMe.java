@@ -1,2 +1,4 @@
-package org.example.book6;public class ClickMe {
+package org.example.book6;
+
+public class ClickMe {
 }

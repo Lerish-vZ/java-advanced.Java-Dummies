@@ -33,4 +33,12 @@ public class ClickMe extends Application {
         primaryStage.setTitle("The Click Me App");
         primaryStage.show();
     }
+
+    public void buttonClick(){
+        if(btn.getText() == "Click me please!"){
+            btn.setText("You clicked me!");
+        } else {
+            btn.setText("Click me please!");
+        }
+    }
 }

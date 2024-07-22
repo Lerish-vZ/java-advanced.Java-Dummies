@@ -1,4 +1,10 @@
 package chapter1;
 
-public class ClickMe {
+import javafx.application.*;
+import javafx.stage.*;
+import javafx.scene.*;
+import javafx.scene.layout.*;
+import javafx.scene.control.*;
+
+public class ClickMe extends Application{
 }

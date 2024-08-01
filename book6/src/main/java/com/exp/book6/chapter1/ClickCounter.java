@@ -45,7 +45,9 @@ public class ClickCounter extends Application {
     public void buttonClick(){
         iClickCounter++;
         if (iClickCounter == 1) {
-            
+            lbl.setText("You have clicked the button once.");
+        } else {
+            lbl.setText("You have clicked the button " + iClickCounter + " times.");
         }
     }
 }

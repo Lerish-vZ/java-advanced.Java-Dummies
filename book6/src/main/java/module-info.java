@@ -1,4 +1,4 @@
-module com.exercises.book6 {
+module com.exp.book6 {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -8,8 +8,11 @@ module com.exercises.book6 {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.exercises.book6 to javafx.fxml;
-    exports com.exercises.book6;
+    opens com.exp.book6 to javafx.fxml;
+    exports com.exp.book6;
+    exports com.exp.book6.chapter1;
+    opens com.exp.book6.chapter1 to javafx.fxml;
 }

@@ -1,4 +1,4 @@
-package com.exercises.book6;
+package com.exp.book6.chapter1;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

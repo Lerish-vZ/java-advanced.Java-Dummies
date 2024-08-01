@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.exercises</groupId>
+    <groupId>com.exp</groupId>
     <artifactId>book6</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>book6</name>
@@ -133,7 +133,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.exercises.book6/com.exercises.book6.HelloApplication</mainClass>
+                            <mainClass>com.exp.book6/com.exp.book6.chapter1.HelloApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

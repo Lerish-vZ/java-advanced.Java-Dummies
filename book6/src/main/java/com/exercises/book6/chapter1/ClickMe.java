@@ -1,6 +1,8 @@
 package com.exercises.book6.chapter1;
 
+import com.exercises.book6.HelloApplication;
 import javafx.application.*;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.layout.*;
@@ -12,9 +14,12 @@ public class ClickMe extends Application
     {
         launch(args);
     }
+
     Button btn;
+
     @Override public void start(Stage primaryStage)
     {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
 // Create the button
         btn = new Button();
         btn.setText("Click me please!");

@@ -28,24 +28,24 @@ public class ClickCounter extends Application {
         lbl = new Label();
         lbl.setText("You have not clicked the button.");
 
-        //Add the button to a layout pane
+        //Add the button and lable to a layout pane
         BorderPane pane = new BorderPane();
+        pane.setTop(lbl);
         pane.setCenter(btn);
 
         //Add the layout pane to a scene
-        Scene scene = new Scene(pane, 300, 250);
+        Scene scene = new Scene(pane, 250, 150);
 
         //Finalize and show the stage
         primaryStage.setScene(scene);
-        primaryStage.setTitle("The Click Me App");
+        primaryStage.setTitle("Click Counter");
         primaryStage.show();
     }
 
     public void buttonClick(){
-        if(btn.getText() == "Click me please!"){
-            btn.setText("You clicked me!");
-        } else {
-            btn.setText("Click me please!");
+        iClickCounter++;
+        if (iClickCounter == 1) {
+            
         }
     }
 }

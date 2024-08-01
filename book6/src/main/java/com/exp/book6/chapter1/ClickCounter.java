@@ -3,6 +3,7 @@ package com.exp.book6.chapter1;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -22,6 +23,10 @@ public class ClickCounter extends Application {
         btn = new Button();
         btn.setText("Click me please!");
         btn.setOnAction(e -> buttonClick());
+
+        //Create the Lable
+        lbl = new Label();
+        lbl.setText("You have not clicked the button.");
 
         //Add the button to a layout pane
         BorderPane pane = new BorderPane();

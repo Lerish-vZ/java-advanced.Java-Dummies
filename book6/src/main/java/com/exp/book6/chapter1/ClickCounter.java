@@ -24,7 +24,7 @@ public class ClickCounter extends Application {
         btn.setText("Click me please!");
         btn.setOnAction(e -> buttonClick());
 
-        //Create the Lable
+        //Create the Label
         lbl = new Label();
         lbl.setText("You have not clicked the button.");
 

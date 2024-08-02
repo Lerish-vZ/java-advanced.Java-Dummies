@@ -23,18 +23,12 @@ public class AddSubtract5 extends Application {
         // Create the Add button
         btnAdd = new Button();
         btnAdd.setText("Add");
-        btnAdd.setOnAction(e -> {
-            iCounter++;
-            lbl.setText(String.valueOf(iCounter));
-        });
+        btnAdd.setOnAction(e -> btnAdd_Click());
 
         // Create the Subtract button
         btnSubtract = new Button();
         btnSubtract.setText("Subtract");
-        btnSubtract.setOnAction(e -> {
-            iCounter--;
-            lbl.setText(String.valueOf(iCounter));
-        });
+        btnSubtract.setOnAction(e -> btnSubtract_Click());
 
         // Create the Label
         lbl = new Label();
@@ -53,3 +47,14 @@ public class AddSubtract5 extends Application {
         primaryStage.setTitle("Add/Sub");
         primaryStage.show();
     }
+
+    private void btnAdd_Click() {
+        iCounter++;
+        lbl.setText(Integer.toString(iCounter));
+    }
+
+    private void btnSubtract_Click() {
+        iCounter--;
+        lbl.setText(Integer.toString(iCounter));
+    }
+}

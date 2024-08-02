@@ -62,6 +62,15 @@ public class SceneSwitcher extends Application {
         btnAdd.setText("Add");
         btnAdd.setOnAction(e -> btnAdd_Click());
 
-        
+        btnSubtract = new Button();
+        btnSubtract.setText("Subtract");
+        btnSubtract.setOnAction(e -> btnSubtract_Click());
+
+        btnSwitchToScene1 = new Button();
+        btnSwitchToScene1.setText("Switch!");
+        btnSwitchToScene1.setOnAction(e -> btnSwitchToScene1_Click());
+
+        HBox pane2 = new HBox(10); //the 10 means the controls have to be seperated by 10 pixels
+        pane2.getChildren().addAll(lblCounter, btnAdd, btnSubtract);
     }
 }

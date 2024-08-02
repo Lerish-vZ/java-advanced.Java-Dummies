@@ -13,6 +13,11 @@ public class AddSubtract2 extends Application {
         launch(args);
     }
 
+    Button btnAdd;
+    Button btnSubtract;
+    Label lbl;
+    int iCounter = 0;
+
     @Override
     public void start(Stage primaryStage) {
 

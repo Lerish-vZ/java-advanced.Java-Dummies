@@ -1,4 +1,5 @@
 package com.exp.book6.chapter3;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -10,6 +11,6 @@ public class SceneSwitcher extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        
+
     }
 }

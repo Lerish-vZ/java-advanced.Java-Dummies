@@ -40,5 +40,13 @@ public class AddSubtract2 extends Application {
         //Add the buttons and label to an HBox pane
         HBox pane = new HBox(50);
         pane.getChildren().addAll(btnAdd, btnSubtract, lbl);
+
+        //Add the layout pane to a scene
+        Scene scene = new Scene(pane, 200, 75);
+
+        //Add the scene to the stage, set the title and show the stage
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Add/Subtract");
+        primaryStage.show();
     }
 }

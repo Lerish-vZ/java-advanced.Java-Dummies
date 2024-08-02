@@ -35,7 +35,7 @@ public class AddSubtract1 extends Application implements EventHandler <ActionEve
         lbl.setText(Integer.toString(iCounter));
 
         //Add the buttons and label to an HBox pane
-        HBox pane = new HBox(10);
+        HBox pane = new HBox(50);
         pane.getChildren().addAll(btnAdd, btnSubtract, lbl);
 
         //Add the layout pane to a scene

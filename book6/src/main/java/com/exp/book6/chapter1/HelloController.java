@@ -1,4 +1,4 @@
-package com.exp.book6.chapter1;
+package com.exp.book6.chapters.chapter1;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

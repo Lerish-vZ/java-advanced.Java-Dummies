@@ -1,7 +1,11 @@
 package com.exp.book6.chapter3;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
+import javafx.application.*;
+import javafx.stage.*;
+import javafx.scene.*;
+import javafx.scene.layout.*;
+import javafx.scene.control.*;
+import javafx.event.*;
 
 public class SceneSwitcher extends Application {
 

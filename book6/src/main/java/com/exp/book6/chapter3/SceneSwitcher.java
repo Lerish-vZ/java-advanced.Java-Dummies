@@ -83,5 +83,14 @@ public class SceneSwitcher extends Application {
 
     //Event handlers for scene 1
 
+    public void btnclickMe_Click() {
+        iClickCount++;
+        if(iClickCount == 1){
+            lblClicks.setText("You have clicked once.");
+        } else {
+            lblClicks.setText("You have clicked " + iClickCount + " times.");
+        }
+    }
+
     
 }

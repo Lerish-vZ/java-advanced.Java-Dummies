@@ -13,6 +13,24 @@ public class SceneSwitcher extends Application {
         launch(args);
     }
 
+    //Class fields for Click-Counter scene
+    int iClickCount = 0;
+    Label lblClicks;
+    Button btnClickMe;
+    Button btnSwitchToScene2;
+    Scene scene1;
+
+    //Class fields for Add-Subtract scene
+    int iCounter = 0;
+    Label lblCounter;
+    Button btnAdd;
+    Button btnSubtract;
+    Button btnSwitchToScene1;
+    Scene scene2;
+
+    //Class field for stage
+    Stage stage;
+
     @Override
     public void start(Stage primaryStage) {
 

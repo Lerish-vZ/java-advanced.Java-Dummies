@@ -97,5 +97,14 @@ public class SceneSwitcher extends Application {
     }
 
     //Event handlers for scene 2
-    
+
+    public void btnAdd_Click() {
+        iCounter++;
+        lblCounter.setText(Integer.toString(iCounter));
+    }
+
+    public void btnSubtract_Click() {
+        iCounter--;
+        lblCounter.setText(Integer.toString(iCounter));
+    }
 }

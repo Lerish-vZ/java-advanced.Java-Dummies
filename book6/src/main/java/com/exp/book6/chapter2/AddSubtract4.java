@@ -26,12 +26,9 @@ public class AddSubtract4 extends Application {
         // Create the Add button
         btnAdd = new Button();
         btnAdd.setText("Add");
-        btnAdd.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent e) {
+        btnAdd.setOnAction(e -> {
                 iCounter++;
                 lbl.setText(String.valueOf(iCounter));
-            }
         });
 
         // Create the Subtract button

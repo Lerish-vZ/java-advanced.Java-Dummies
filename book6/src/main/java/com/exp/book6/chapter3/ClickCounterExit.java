@@ -27,7 +27,7 @@ public class ClickCounterExit extends Application {
 
         //Create the Close button
         Button btnClose = new Button("Close");
-        btnClose.setOnAction(e -> btnClose_CLick());
+        btnClose.setOnAction(e -> btnClose_Click());
 
         //Add the buttons to a layout pane
         VBox pane = new VBox(10);
@@ -58,7 +58,7 @@ public class ClickCounterExit extends Application {
         }
     }
 
-    public void btnClose_CLick() {
+    public void btnClose_Click() {
         Alert a = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to quit?", ButtonType.YES, ButtonType.NO);
         Optional<ButtonType> confirm = a.showAndWait();
 

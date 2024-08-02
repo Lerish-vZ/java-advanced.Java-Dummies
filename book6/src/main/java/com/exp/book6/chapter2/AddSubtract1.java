@@ -1,9 +1,10 @@
 package com.exp.book6.chapter2;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.event.*;
+import javafx.scene.*;
 import javafx.scene.control.*;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 public class AddSubtract1 extends Application implements EventHandler <ActionEvent> {
@@ -33,7 +34,18 @@ public class AddSubtract1 extends Application implements EventHandler <ActionEve
         lbl = new Label();
         lbl.setText(Integer.toString(iCounter));
 
-        
+        //Add the buttons and label to an HBox pane
+        HBox pane = new HBox(10);
+        pane.getChildren().addAll(btnAdd, btnSubtract, lbl);
 
+        //Add the layout pane to a scene
+        Scene scene = new Scene(pane);
+
+        //Add the scene to the stage, set the title and show the stage
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Add/Subtract");
+        primaryStage.show();
     }
+
+    
 }

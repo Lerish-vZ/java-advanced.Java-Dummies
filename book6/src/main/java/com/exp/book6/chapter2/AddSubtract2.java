@@ -20,6 +20,25 @@ public class AddSubtract2 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        //Create a ClickHandler instance
+        ClickHandler ch = new ClickHandler();
 
+        //Create the Add button
+        btnAdd = new Button();
+        btnAdd.setText("Add");
+        btnAdd.setOnAction(ch);
+
+        //Create the Subtract button
+        btnSubtract = new Button();
+        btnSubtract.setText("Subtract");
+        btnSubtract.setOnAction(ch);
+
+        //Create the Label
+        lbl = new Label();
+        lbl.setText(Integer.toString(iCounter));
+
+        //Add the buttons and label to an HBox pane
+        HBox pane = new HBox(50);
+        pane.getChildren().addAll(btnAdd, btnSubtract, lbl);
     }
 }

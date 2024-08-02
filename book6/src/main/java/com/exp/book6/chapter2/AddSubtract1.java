@@ -47,5 +47,14 @@ public class AddSubtract1 extends Application implements EventHandler <ActionEve
         primaryStage.show();
     }
 
-    
+    @Override public void handle(ActionEvent e) {
+        if (e.getSource() == btnAdd) {
+            iCounter++;
+        } else {
+            if (e.getSource() == btnSubtract) {
+                iCounter--;
+            }
+        }
+        lbl.setText(Integer.toString(iCounter));
+    }
 }

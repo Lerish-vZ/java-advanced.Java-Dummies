@@ -48,6 +48,11 @@ public class SceneSwitcher extends Application {
         btnSwitchToScene2.setText("Switch!");
         btnSwitchToScene2.setOnAction(e -> btnSwitchToScene2_Click());
 
-        
+        VBox pane1 = new VBox();
+        pane1.getChildren().addAll(lblClicks, btnClickMe, btnSwitchToScene2);
+
+        scene1 = new Scene(pane1, 250, 150);
+
+        //Build the Add-Subtract scene
     }
 }

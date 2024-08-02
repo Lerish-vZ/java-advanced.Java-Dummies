@@ -13,7 +13,6 @@ public class ClickCounterAlert extends Application {
     }
 
     Button btn;
-    Label lbl;
     int iClickCount = 0;
 
     @Override

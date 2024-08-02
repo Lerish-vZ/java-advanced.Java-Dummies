@@ -49,4 +49,10 @@ public class AddSubtract2 extends Application {
         primaryStage.setTitle("Add/Subtract");
         primaryStage.show();
     }
+
+    private class ClickHandler implements EventHandler<ActionEvent> {
+        @Override public void handle(ActionEvent e) {
+            
+        }
+    }
 }

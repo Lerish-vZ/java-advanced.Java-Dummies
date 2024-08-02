@@ -14,8 +14,13 @@ public class ClickCounterExit extends Application {
         launch(args);
     }
 
+    Stage stage;
+    int iClickCount = 0;
+
     @Override
     public void start(Stage primaryStage) {
+        stage = primaryStage;
 
+        //
     }
 }

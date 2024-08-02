@@ -40,6 +40,10 @@ public class ClickCounterAlert extends Application {
         iClickCount++;
         if(iClickCount == 1) {
             Alert a = new Alert(Alert.AlertType.INFORMATION, "You have clicked once.");
+            a.showAndWait();
+        } else {
+            Alert a = new Alert(Alert.AlertType.INFORMATION, "You have clicked " + iClickCount + " times.");
+            a.showAndWait();
         }
     }
 }

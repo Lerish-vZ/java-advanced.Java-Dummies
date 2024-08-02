@@ -21,6 +21,12 @@ public class ClickCounterExit extends Application {
     public void start(Stage primaryStage) {
         stage = primaryStage;
 
-        //
+        //Create the Click Me button
+        Button btnClickMe = new Button("Click me please!");
+        btnClickMe.setOnAction(e -> btnClickMe_Click());
+
+        //Create the Close button
+        Button btnClose = new Button("Close");
+        btnClose.setOnAction(e -> btnClose_CLick());
     }
 }

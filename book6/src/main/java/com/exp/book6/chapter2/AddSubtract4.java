@@ -1,8 +1,5 @@
 package com.exp.book6.chapter2;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
-
 import javafx.application.*;
 import javafx.stage.*;
 import javafx.scene.*;
@@ -57,4 +54,3 @@ public class AddSubtract4 extends Application {
         primaryStage.show();
     }
 }
-

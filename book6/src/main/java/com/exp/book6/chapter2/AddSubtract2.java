@@ -52,7 +52,14 @@ public class AddSubtract2 extends Application {
 
     private class ClickHandler implements EventHandler<ActionEvent> {
         @Override public void handle(ActionEvent e) {
-            
+            if (e.getSource() == btnAdd) {
+                iCounter++;
+            } else {
+                if (e.getSource() == btnSubtract) {
+                    iCounter--;
+                }
+            }
+            lbl.setText(Integer.toString(iCounter));
         }
     }
 }

@@ -71,6 +71,17 @@ public class SceneSwitcher extends Application {
         btnSwitchToScene1.setOnAction(e -> btnSwitchToScene1_Click());
 
         HBox pane2 = new HBox(10); //the 10 means the controls have to be seperated by 10 pixels
-        pane2.getChildren().addAll(lblCounter, btnAdd, btnSubtract);
+        pane2.getChildren().addAll(lblCounter, btnAdd, btnSubtract,btnSwitchToScene1);
+
+        scene2 = new Scene(pane2, 300, 75);
+
+        //Set the stage with scene 1 and show the stage
+        primaryStage.setScene(scene1);
+        primaryStage.setTitle("Scene Switcher");
+        primaryStage.show();
     }
+
+    //Event handlers for scene 1
+
+    
 }

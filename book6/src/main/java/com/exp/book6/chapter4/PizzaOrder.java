@@ -55,7 +55,7 @@ public class PizzaOrder extends Application {
         txtAddress.setPromptText("Enter the address here");
 
         //Create the size pane
-        Label lblSize = new Label("Size: ");
+        Label lblSize = new Label("Size");
         rdoSmall = new RadioButton("Small");
         rdoMedium = new RadioButton("Medium");
         rdoLarge = new RadioButton("Large");
@@ -69,13 +69,25 @@ public class PizzaOrder extends Application {
         paneSize.setSpacing(10);
 
         //Create the crust pane
-        Label lblCrust = new Label("Crust: ");
+        Label lblCrust = new Label("Crust");
         rdoThin = new RadioButton("Thin");
         rdoThick = new RadioButton("Thick");
         rdoThin.setSelected(true);
         ToggleGroup groupCrust = new ToggleGroup();
         rdoThin.setToggleGroup(groupCrust);
         rdoThick.setToggleGroup(groupCrust);
+
+        VBox paneCrust = new VBox(lblCrust, rdoThin, rdoThick);
+        paneCrust.setSpacing(10);
+
+        //Create the toppings pane
+        Label lblToppings = new Label("Toppings");
+        chkPepperoni = new CheckBox("Pepperoni");
+        chkMushrooms = new CheckBox("Mushrooms");
+        chkAnchovies = new CheckBox("Anchovies");
+
+        VBox paneToppings = new VBox(lblToppings, chkPepperoni, chkMushrooms, chkAnchovies);
+        paneToppings.setSpacing(10);
 
         
     }

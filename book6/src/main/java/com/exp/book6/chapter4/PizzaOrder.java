@@ -89,6 +89,15 @@ public class PizzaOrder extends Application {
         VBox paneToppings = new VBox(lblToppings, chkPepperoni, chkMushrooms, chkAnchovies);
         paneToppings.setSpacing(10);
 
-        
+        //Create the buttons
+        Button btnOK = new Button("OK");
+        btnOK.setPrefWidth(80);
+        btnOK.setOnAction(e -> btnOK_Click);
+
+        Button btnCancel = new Button("Cancel");
+        btnOK.setPrefWidth(80);
+        btnOK.setOnAction(e -> btnCancel_Click);
+
+        HBox paneButtons = new HBox(10, btnOK, btnCancel);
     }
 }

@@ -16,7 +16,7 @@ public class PizzaOrder extends Application {
     Stage stage;
     TextField txtName;
     TextField txtPhone;
-    TextField txtAdress;
+    TextField txtAddress;
     RadioButton rdoSmall;
     RadioButton rdoMedium;
     RadioButton rdoLarge;
@@ -46,6 +46,12 @@ public class PizzaOrder extends Application {
         txtPhone.setMaxWidth(180);
         txtPhone.setPromptText("Enter the phone number here");
 
-        //
+        //Create the addess label and text field
+        Label lblAddress = new Label("Adress: ");
+        txtAddress = new TextField();
+        txtAddress.setMinWidth(100);
+        txtAddress.setPrefWidth(200);
+        txtAddress.setMaxWidth(300);
+        txtAddress.setPromptText("Enter the address here");
     }
 }

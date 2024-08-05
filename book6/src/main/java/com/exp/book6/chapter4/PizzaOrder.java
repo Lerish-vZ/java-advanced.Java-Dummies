@@ -69,5 +69,14 @@ public class PizzaOrder extends Application {
         paneSize.setSpacing(10);
 
         //Create the crust pane
+        Label lblCrust = new Label("Crust: ");
+        rdoThin = new RadioButton("Thin");
+        rdoThick = new RadioButton("Thick");
+        rdoThin.setSelected(true);
+        ToggleGroup groupCrust = new ToggleGroup();
+        rdoThin.setToggleGroup(groupCrust);
+        rdoThick.setToggleGroup(groupCrust);
+
+        
     }
 }

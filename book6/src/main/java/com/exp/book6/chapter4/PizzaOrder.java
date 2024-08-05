@@ -140,4 +140,30 @@ public class PizzaOrder extends Application {
         primaryStage.setMaxWidth(900);
         primaryStage.show();
     }
+
+    public void btnOK_Click() {
+        //Create message string with the customer information
+        String msg = "Customer: \n\n";
+
+        msg += "\t" + txtName.getText() + "\n";
+        msg += "\t" + txtPhone.getText() + "\n\n";
+        msg += "\t" + txtAddress.getText() + "\n";
+        msg += "You have ordered a ";
+
+        //Add the pizza size
+        if(rdoSmall.isSelected()){
+            msg += "small ";
+        }
+        if(rdoMedium.isSelected()){
+            msg += "medium ";
+        }
+        if(rdoLarge.isSelected()){
+            msg += "large ";
+        }
+
+        //Add the crust style
+        if()
+
+
+    }
 }

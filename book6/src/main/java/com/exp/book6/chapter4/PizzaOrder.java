@@ -123,6 +123,16 @@ public class PizzaOrder extends Application {
         grid.setColumnSpan(txtPhone, 2);
         grid.setColumnSpan(txtAddress, 2);
 
+        //Set column widths
+        ColumnConstraints col1 = new ColumnConstraints();
+        col1.setPercentWidth(33);
+        ColumnConstraints col2 = new ColumnConstraints();
+        col2.setPercentWidth(33);
+        ColumnConstraints col3 = new ColumnConstraints();
+        col3.setPercentWidth(33);
+        grid.getColumnConstraints().addAll(col1, col2, col3);
+
+        //Create the scene and the stage
         
     }
 }

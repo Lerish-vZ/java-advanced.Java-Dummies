@@ -1,2 +1,4 @@
-package chapter1;public class FileVisitorDemo {
+package chapter1;
+
+public class FileVisitorDemo {
 }

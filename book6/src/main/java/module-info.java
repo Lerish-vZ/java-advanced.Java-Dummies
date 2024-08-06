@@ -11,7 +11,7 @@ module com.exp.book6 {
     requires com.almasb.fxgl.all;
 
     opens com.exp.book6 to javafx.fxml;
-    exports com.exp.book6.chapter3;
+    exports com.exp.book6.chapter4;
     opens com.exp.book6.chapter3 to javafx.fxml;
     opens com.exp.book6.chapter4 to javafx.fxml;
 }

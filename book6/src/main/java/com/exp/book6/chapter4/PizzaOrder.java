@@ -61,9 +61,9 @@ public class PizzaOrder extends Application {
         rdoLarge = new RadioButton("Large");
         rdoMedium.setSelected(true);
         ToggleGroup groupSize = new ToggleGroup();
-        rdoSmall.getToggleGroup(groupSize);
-        rdoMedium.getToggleGroup(groupSize);
-        rdoLarge.getToggleGroup(groupSize);
+        rdoSmall.getToggleGroup();
+        rdoMedium.getToggleGroup();
+        rdoLarge.getToggleGroup();
 
         VBox paneSize = new VBox(lblSize, rdoSmall, rdoMedium, rdoLarge);
         paneSize.setSpacing(10);
@@ -95,8 +95,8 @@ public class PizzaOrder extends Application {
         btnOK.setOnAction(e -> btnOK_Click());
 
         Button btnCancel = new Button("Cancel");
-        btnOK.setPrefWidth(80);
-        btnOK.setOnAction(e -> btnCancel_Click());
+        btnCancel.setPrefWidth(80);
+        btnCancel.setOnAction(e -> btnCancel_Click());
 
         HBox paneButtons = new HBox(10, btnOK, btnCancel);
 
@@ -175,11 +175,12 @@ public class PizzaOrder extends Application {
         toppings = buildToppings(chkMushrooms, toppings);
         toppings = buildToppings(chkAnchovies, toppings);
 
-        if(toppings.equals("")){
+        if(toppings.equals(""))
             msg += "no toppings.";
-        } else
+         else
             msg += "the following toppings: \n" + toppings;
 
+        System.out.println(msg);
         //Display the message
         Alert a = new Alert(Alert.AlertType.INFORMATION, msg);
         a.setTitle("Order Details");

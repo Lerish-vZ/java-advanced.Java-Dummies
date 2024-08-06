@@ -23,6 +23,11 @@ public class FileVisitorDemo {
             return FileVisitResult.CONTINUE;
         }
 
+        public FileVisitResult visitFileFailed(Path file, BasicFileAttributes attrs) {
+            System.out.println(file.toString() + " COULD NOT ACCESS!!");
+            return FileVisitResult.CONTINUE;
+        }
+
         
     }
 }

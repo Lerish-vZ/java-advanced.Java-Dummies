@@ -162,7 +162,25 @@ public class PizzaOrder extends Application {
         }
 
         //Add the crust style
-        if()
+        if(rdoThin.isSelected()){
+            msg += " thin crust pizza with ";
+        }
+        if(rdoThick.isSelected()){
+            msg += " thick crust pizza with ";
+        }
+
+        //Add the toppings
+        String toppings = "";
+        toppings = buildToppings(chkPepperoni, toppings);
+        toppings = buildToppings(chkMushrooms, toppings);
+        toppings = buildToppings(chkAnchovies, toppings);
+
+        if(toppings.equals("")){
+            msg += "no toppings.";
+        } else
+            msg += "the following toppings: \n" + toppings;
+
+        
 
 
     }

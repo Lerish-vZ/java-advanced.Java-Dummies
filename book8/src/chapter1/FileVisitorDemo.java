@@ -6,7 +6,7 @@ import java.nio.file.attribute.*;
 
 public class FileVisitorDemo {
     public static void main(String[] args) {
-        Path start = Paths.get("c:\\Windows\\System32");
+        Path start = Paths.get("C:\\Windows\\System32");
         MyFileVisitor visitor = new MyFileVisitor();
 
         try {

@@ -24,10 +24,13 @@ public class FileVisitorDemo {
         }
 
         public FileVisitResult visitFileFailed(Path file, BasicFileAttributes attrs) {
-            System.out.println(file.toString() + " COULD NOT ACCESS!!");
+            System.out.println(file.toString() + " COULD NOT ACCESS!");
             return FileVisitResult.CONTINUE;
         }
 
-        
+        public FileVisitResult preVisitDirectoryFailed(Path dir, IOException e) {
+            System.out.println(dir.toString() + " COULD NOT ACCESS!");
+            return FileVisitResult.CONTINUE;
+        }
     }
 }

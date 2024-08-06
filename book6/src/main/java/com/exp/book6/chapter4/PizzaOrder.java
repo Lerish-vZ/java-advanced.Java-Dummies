@@ -92,11 +92,11 @@ public class PizzaOrder extends Application {
         //Create the buttons
         Button btnOK = new Button("OK");
         btnOK.setPrefWidth(80);
-        btnOK.setOnAction(e -> btnOK_Click);
+        btnOK.setOnAction(e -> btnOK_Click());
 
         Button btnCancel = new Button("Cancel");
         btnOK.setPrefWidth(80);
-        btnOK.setOnAction(e -> btnCancel_Click);
+        btnOK.setOnAction(e -> btnCancel_Click());
 
         HBox paneButtons = new HBox(10, btnOK, btnCancel);
 
@@ -197,5 +197,7 @@ public class PizzaOrder extends Application {
         return msg;
     }
 
-    
+    public void btnCancel_Click(){
+        stage.close();
+    }
 }

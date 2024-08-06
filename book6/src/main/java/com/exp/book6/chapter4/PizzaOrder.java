@@ -186,5 +186,16 @@ public class PizzaOrder extends Application {
         a.showAndWait();
     }
 
+    public String buildToppings(CheckBox chk, String msg) {
+        //Helper method for displaying the list of toppings
+        if(chk.isSelected()){
+            if(!msg.equals("")){
+                msg += ", ";
+            }
+            msg += chk.getText();
+        }
+        return msg;
+    }
+
     
 }

@@ -16,5 +16,13 @@ public class FileVisitorDemo {
         }
     }
 
-    
+    private static class MyFileVisitor extends SimpleFileVisitor<Path> {
+        @Override
+        public FileVisitResult visitFile(Path file, BasicFileAttributes attrs)  {
+            System.out.println(file.toString());
+            return FileVisitResult.CONTINUE;
+        }
+
+        
+    }
 }

@@ -1,2 +1,4 @@
-package chapter2;public class ReadFile {
+package chapter2;
+
+public class ReadFile {
 }

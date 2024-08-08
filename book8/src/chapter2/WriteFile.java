@@ -36,5 +36,17 @@ public class WriteFile {
         return movies;
     }
 
-    
+    private static PrintWriter openWriter(String name) {
+        try{
+            File file = new File(name);
+            PrintWriter out = new PrintWriter(
+                    new BufferedWriter(
+                            new FileWriter(file) ), true);
+            return out;
+        } catch (IOException e){
+            System.out.println("I/O Error");
+            System.exit(0);
+        }
+        return null;
+    }
 }

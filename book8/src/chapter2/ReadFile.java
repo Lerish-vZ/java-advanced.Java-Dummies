@@ -11,7 +11,12 @@ public class ReadFile {
 
         while (movie != null) {
             String msg = Integer.toString(movie.year);
-            
+            msg +=  ": " + movie.title;
+            msg += " (" + cf.format(movie.price) + ")";
+            System.out.println(msg);
+            movie = readMovie(in);
         }
     }
+
+    
 }

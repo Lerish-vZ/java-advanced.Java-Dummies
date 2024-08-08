@@ -49,4 +49,13 @@ public class WriteFile {
         }
         return null;
     }
+
+    private static void writeMovie(Movie m, PrintWriter out){
+        String line = m.title;
+        line += "\t" + Integer.toString(m.year);
+        line += "\t" + Double.toString(m.price);
+        out.println(line);
+    }
+
+    
 }

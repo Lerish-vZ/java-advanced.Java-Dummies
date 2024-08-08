@@ -30,4 +30,23 @@ public class ReadFile {
         }
         return in;
     }
+
+    private static Movie readMovie(BufferedReader in){
+        String title;
+        int year;
+        double price;
+        String line = "";
+        String[] data;
+
+        try{
+            line = in.readLine();
+        } catch (IOException e) {
+            System.out.println("I/O Error");
+            System.exit(0);
+        }
+
+        if (line == null)
+            return null;
+        else
+    }
 }

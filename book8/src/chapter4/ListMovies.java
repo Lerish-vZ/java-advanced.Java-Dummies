@@ -30,6 +30,11 @@ public class ListMovies {
             ResultSet rows;
             rows = s.executeQuery(select);
             return rows;
-        } 
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
+
+    
 }

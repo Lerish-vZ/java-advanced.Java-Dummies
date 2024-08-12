@@ -1,2 +1,4 @@
-package chapter2;public class WriteBinaryFile {
+package chapter2;
+
+public class WriteBinaryFile {
 }

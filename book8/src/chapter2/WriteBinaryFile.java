@@ -49,5 +49,24 @@ public class WriteBinaryFile {
         }
         return out;
     }
-    
+
+    private static void writeMovie(Movie m, DataOutputStream out){
+        try {
+            out.writeUTF(m.title);
+            out.writeInt(m.year);
+            out.writeDouble(m.price);
+        } catch (IOException e){
+            System.out.println("I/O Exception writing data.");
+            System.exit(0);
+        }
+    }
+
+    private static void closeFile(DataOutputStream out){
+        try{
+            out.close();
+    } catch (IOException e){
+            System.out.println("I/O Exception closing file.");
+            System.exit(0);
+        }
+    }
 }

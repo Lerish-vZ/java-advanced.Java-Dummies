@@ -9,7 +9,7 @@ public class ListMovies {
         ResultSet movies = getMovies();
 
         try {
-            while(movies.next()){
+            while (movies.next()) {
                 Movie m = getMovie(movies);
                 String msg = Integer.toString(m.year);
                 msg += ": " + m.title;
@@ -44,7 +44,7 @@ public class ListMovies {
             String user = "postgres";
             String pw = "123456";
             con = DriverManager.getConnection(url, user, pw);
-        } catch (SQLException e){
+        } catch (SQLException e) {
             System.out.println(e.getMessage());
             System.exit(0);
         }
@@ -63,5 +63,15 @@ public class ListMovies {
         return null;
     }
 
-    
+    private static class Movie {
+        public String title;
+        public int year;
+        public double price;
+
+        public Movie(String title, int year, double price) {
+            this.title = title;
+            this.year = year;
+            this.price = price;
+        }
+    }
 }

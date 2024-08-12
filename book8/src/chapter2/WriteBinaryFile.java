@@ -36,5 +36,18 @@ public class WriteBinaryFile {
         return movies;
     }
 
+    private static DataOutputStream openOutputStream(String name){
+        DataOutputStream out = null;
+
+        try{
+            File file = new File(name);
+            out = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
+            return out;
+        } catch (IOException e) {
+            System.out.println("I/O Exception openeing file.");
+            System.exit(0);
+        }
+        return out;
+    }
     
 }

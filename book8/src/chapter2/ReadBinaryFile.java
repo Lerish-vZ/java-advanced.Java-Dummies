@@ -12,7 +12,7 @@ public class ReadBinaryFile {
         while (!eof) {
             Movie movie = readMovie(in);
 
-            if (movie = null)
+            if (movie == null)
                 eof = true;
             else {
                 String msg = Integer.toString(movie.year);
@@ -40,7 +40,7 @@ public class ReadBinaryFile {
     }
 
     private static Movie readMovie(DataInputStream in) {
-        Stirng title = "";
+        String title = "";
         int year = 0;
         double price = 0.0;
 

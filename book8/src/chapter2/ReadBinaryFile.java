@@ -1,2 +1,4 @@
-package chapter2;public class ReadBinaryFile {
+package chapter2;
+
+public class ReadBinaryFile {
 }

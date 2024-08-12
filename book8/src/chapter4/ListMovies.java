@@ -50,4 +50,18 @@ public class ListMovies {
         }
         return con;
     }
+
+    private static Movie getMovie(ResultSet movies) {
+        try {
+            String title = movies.getString("Title");
+            int year = movies.getInt("Year");
+            double price = movies.getDouble("Price");
+            return new Movie(title, year, price);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
+
+    
 }

@@ -20,4 +20,16 @@ public class ListMovies {
             System.out.println(e.getMessage());
         }
     }
+
+    private static ResultSet getMovies() {
+        Connection con = getConnection();
+
+        try {
+            Statement s = con.createStatement();
+            String select = "Select title, year, price from movie order by year";
+            ResultSet rows;
+            rows = s.executeQuery(select);
+            return rows;
+        } 
+    }
 }

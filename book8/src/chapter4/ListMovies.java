@@ -36,5 +36,18 @@ public class ListMovies {
         return null;
     }
 
-    
+    private static Connection getConnection() {
+        Connection con = null;
+
+        try {
+            String url = "jdbc:postgresql://localhost:5432/movies";
+            String user = "postgres";
+            String pw = "123456";
+            con = DriverManager.getConnection(url, user, pw);
+        } catch (SQLException e){
+            System.out.println(e.getMessage());
+            System.exit(0);
+        }
+        return con;
+    }
 }

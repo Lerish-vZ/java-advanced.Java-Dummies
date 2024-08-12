@@ -1,2 +1,4 @@
-package chapter4;public class ListMovies {
+package chapter4;
+
+public class ListMovies {
 }

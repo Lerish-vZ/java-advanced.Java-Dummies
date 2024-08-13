@@ -5,3 +5,8 @@
         <!ELEMENT Title (#PCDATA)>
         <!ELEMENT Price (#PCDATA)>
 
+<!--General form of ELEMENT tag:
+    <!ELEMENT element (content)>
+
+    ATTLIST provides the name of each attribute. General form:
+        <!ATTLIST element attribute type default-value>-->

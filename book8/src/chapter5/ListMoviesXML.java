@@ -15,7 +15,13 @@ public class ListMoviesXML {
         Movie m;
 
         while(movieElement != null) {
-            
+            m = getMovie(movieElement);
+            String msg = Integer.toString(m.year);
+            msg += ": " + m.title;
+            msg += " (" + cf.format(m.price) + ")";
+            System.out.println(msg);
+
+            movieElement = (Element)movieElement.getNextSibling();
         }
     }
 }

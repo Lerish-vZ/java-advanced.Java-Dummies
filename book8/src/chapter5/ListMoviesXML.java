@@ -40,5 +40,20 @@ public class ListMoviesXML {
         return null;
     }
 
-    
+    private static Movie getMovie(Element e) {
+        //get the year attribute
+        String yearString = e.getAttribute("year");
+        int year = Integer.parseInt(yearString);
+
+        //get the title element
+        Element tElement = (Element)e.getFirstChild();
+        String title = getTextValue(tElement).trim();
+
+        //get the price element
+        Element pElement = (Element)tElement.getNextSibling();
+        String pString = getTextValue(pElement).trim();
+        double price = Double.parseDouble(pString);
+
+        return new Movie(title, year, price);
+    }
 }

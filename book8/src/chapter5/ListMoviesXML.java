@@ -1,2 +1,4 @@
-package chapter5;public class ListMoviesXML {
+package chapter5;
+
+public class ListMoviesXML {
 }

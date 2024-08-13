@@ -13,7 +13,7 @@ public class ListMovies {
                 Movie m = getMovie(movies);
                 String msg = Integer.toString(m.year);
                 msg += ": " + m.title;
-                msg += " (" + cf.format(m.price + ")");
+                msg += " (" + cf.format(m.price) + ")";
                 System.out.println(msg);
             }
         } catch (SQLException e) {

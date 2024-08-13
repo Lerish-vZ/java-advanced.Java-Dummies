@@ -11,7 +11,7 @@ public class ListMoviesXML {
     private static NumberFormat cf = NumberFormat.getCurrencyInstance();
 
     public static void main(String[] args) {
-        Document doc = getDocument("movies.xml");
+        Document doc = getDocument("C:\\Users\\lerishav\\ownCloud - lerishav@cloud.zylex.co.za\\Documents\\All my work\\Code College\\7_Java_Advanced\\Java_Dummies\\book8\\src\\chapter5\\movies.xml");
         Element root = doc.getDocumentElement();
         Element movieElement = (Element) root.getFirstChild();
         Movie m;
